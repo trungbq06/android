@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"    
+    android:id="@+id/xoa_ok_root"
+    android:background="@drawable/list_item1"
+    android:gravity="center">    
+   		<Button
+   			android:layout_width="0dip"
+   			android:layout_weight="1"
+    		android:layout_height="wrap_content"
+			android:id="@+id/set_xoa_ok"
+			android:text="Xác lập"
+			android:textColor="#c17601"
+			android:background="@drawable/button_dialog1"
+			/>		
+		<Button
+			android:id="@+id/cancel_xoa_ok"			
+   			android:layout_width="0dip"
+   			android:layout_weight="1"
+    		android:layout_height="wrap_content"
+			android:textColor="#c17601"
+			android:text="Xóa"
+			android:background="@drawable/button_dialog1"
+			/>
+</LinearLayout>

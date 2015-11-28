@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/delete_app_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgpopup"
+    android:orientation="vertical"
+    android:paddingBottom="0dip"
+    android:paddingRight="0dip" >
+
+    <TextView
+        android:id="@+id/txtdelete_app_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="15dip"
+        android:text="Bạn có muốn xóa cuộc hẹn này không?"
+        android:textColor="#f1de9a"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_delete_app_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/button_dialog1"
+            android:text="Có"
+            android:textColor="#84251f" />
+
+        <Button
+            android:id="@+id/bt_delete_app_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/button_dialog1"
+            android:text="Không"
+            android:textColor="#84251f" />
+    </LinearLayout>
+
+</LinearLayout>

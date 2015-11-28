@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IC_LichVanNien</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="power">Powered by IC Soft @ 2013</string>
+	<string name="dob">Ngày tháng năm sinh</string>
+	<string name="sex">Giới tính</string>
+	<string name="male">Nam</string>
+	<string name="female">Nữ</string>
+	<string name="confirm">Xác nhận</string>
+	<string name="cancel">Hủy</string>
+    <string name="details">Chi tiết</string>
+    <string name="today">Hôm nay</string>
+    <string name="date">Thứ</string>
+	<string name="hour">Giờ</string>
+	<string name="day">Ngày</string>
+	<string name="month">Tháng</string>
+	<string name="year">Năm</string>
+	<string name="luckyday">Hoàng đạo</string>
+	<string name="blackday">Hắc đạo</string>
+	<string name="solar">Ngày dương</string>
+	<string name="lunar">Ngày âm</string>
+</resources>

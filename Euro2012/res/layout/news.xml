@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent" android:gravity="center"
+        android:layout_height="44dip"
+        android:background="@drawable/bgtop" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/news"
+            android:textColor="#fff"
+            android:textSize="28dip" />
+        <Button android:layout_width="30dip" android:layout_height="30dip" 
+            android:layout_marginLeft="-40dip" android:id="@+id/btnlist"
+            android:background="@drawable/btnall"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip" android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" 
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip">
+
+        <ViewFlipper android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/vfnews" android:background="@drawable/bgwhite"
+            android:paddingTop="10dip">
+        	<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:background="#fff" android:id="@+id/body"
+	            android:gravity="center_horizontal"
+	            android:orientation="vertical"
+	            android:layout_marginTop="-25dip" >
+	            <ListView android:layout_width="fill_parent" android:layout_height="fill_parent"
+	                android:id="@+id/lvnews"
+	                android:divider="#FFFFFFFF"
+    				android:dividerHeight="0px"
+    				android:fadingEdge="none"
+    				android:layout_marginBottom="25dip"/>
+        	</LinearLayout>
+        	
+        	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:background="#fff" android:baselineAligned="false" 
+                android:orientation="vertical">
+	            
+        	    <LinearLayout android:layout_width="fill_parent" android:layout_height="60dip"
+        	        android:layout_margin="5dip">
+        	        <ImageView android:layout_width="0dip" android:layout_height="fill_parent"
+        	            android:id="@+id/imgnews" android:layout_weight="1"/>
+        	        <LinearLayout android:layout_width="0dip" android:layout_height="fill_parent"
+        	            android:layout_weight="2" android:orientation="vertical">
+        	            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        	            android:textColor="#000" android:textStyle="bold"
+	        	            android:text="pafkl sdgksdg af saf khai kai fde sa"
+	        	            android:gravity="center_vertical" android:id="@+id/txtinfotitle"
+	        	            android:layout_marginLeft="10dip"/>
+        	            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        	            android:textColor="#888" android:textSize="4pt"
+	        	            android:text="Monday 5th April, 2012"
+	        	            android:id="@+id/txttime"
+	        	            android:layout_marginLeft="10dip"/>
+        	        </LinearLayout>
+        	    </LinearLayout>
+        	    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        	        android:id="@+id/wvcontainer">
+	       	        <WebView android:layout_width="fill_parent" android:layout_height="fill_parent"
+	       	        	android:id="@+id/txtcontent"/>
+       	        </LinearLayout>
+        	</LinearLayout>
+        </ViewFlipper>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/bgbottom"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"  android:id="@+id/llbtnsched"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnschedule" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/schedule"
+                android:textSize="8dip" />
+        </LinearLayout>
+
+        <LinearLayout  android:id="@+id/llbtnnews"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/newsactive" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/news"
+                android:textColor="#fff"
+                android:textSize="8dip" />
+        </LinearLayout>
+
+        <LinearLayout  android:id="@+id/llbtnteams"
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnTeams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnteams" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teams"
+                android:textSize="8dip" />
+        </LinearLayout>
+
+        <LinearLayout  android:id="@+id/llbtnsetting"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnsetting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                android:textSize="8dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

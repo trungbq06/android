@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llcontainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/halftransblack"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/llrootpicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" 
+        android:paddingLeft="10dip"
+    	android:paddingRight="10dip">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0dip" android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnpd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/search_day_plus_button"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2"
+                    android:background="#000000"
+                    android:digits="0123456789"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:text="16"
+                    android:textColor="#fff"
+                    android:textSize="40dip" />
+
+                <Button
+                    android:id="@+id/btnmd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/search_day_minus_button"
+                    android:text="-"
+                    android:textColor="#fff"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="25dip"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="50dip"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dip" android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnpm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/search_month_plus_button"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtmonth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2"
+                    android:background="#000000"
+                    android:digits="0123456789"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:paddingLeft="0dip"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:text="03"
+                    android:textColor="#fff"
+                    android:textSize="40dip" />
+
+                <Button
+                    android:id="@+id/btnmm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/search_month_minus_button"
+                    android:text="-"
+                    android:textColor="#fff"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="26dip"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="50dip"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dip" android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnpy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/search_year_plus_button"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtyear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2"
+                    android:background="#000000"
+                    android:digits="0123456789"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="0dip"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:text="1987"
+                    android:textColor="#fff"
+                    android:textSize="40dip" />
+
+                <Button
+                    android:id="@+id/btnmy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/search_year_minus_button"
+                    android:text="-"
+                    android:textColor="#fff"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnamduong"
+                android:layout_width="fill_parent" android:layout_weight="1"
+                android:layout_height="0dip"
+                android:background="@drawable/toogle_button" />
+
+            <LinearLayout
+                android:layout_width="fill_parent" android:layout_weight="1"
+                android:layout_height="0dip"
+                android:layout_marginTop="-20dip" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/amlich"
+                    android:textColor="#888"
+                    android:textSize="14dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/duonglich"
+                    android:textColor="#888"
+                    android:textSize="14dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/btnsearch"
+                android:layout_width="0dip" android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btndarkgray"
+                android:text="@string/timkiem"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnclose"
+                android:layout_width="0dip" android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/btndarkgray"
+                android:text="@string/dong"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/bgtop">
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/teams"
+            android:textColor="#fff"
+            android:textSize="28dip"/>
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="44dip" android:background="@drawable/bgwhite"
+        android:orientation="vertical" android:padding="0dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip">
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="45dip"
+	        android:orientation="horizontal">
+			<TextView android:layout_width="0dip"
+			    android:layout_height="fill_parent"
+			    android:textColor="#333"
+			    android:text="@string/team"
+			    android:layout_weight="4"
+			    android:gravity="center_vertical|center_horizontal"/>
+			<LinearLayout android:layout_width="1px"
+			    android:layout_height="fill_parent"
+			    android:background="#d8e1d6"/>
+			<TextView android:layout_width="0dip"
+			    android:layout_height="fill_parent"
+			    android:textColor="#333"
+			    android:text="@string/pld"
+			    android:layout_weight="1"
+			    android:gravity="center_vertical|center_horizontal"/>
+			<LinearLayout android:layout_width="1px"
+			    android:layout_height="fill_parent"
+			    android:background="#d8e1d6"/>
+			<TextView android:layout_width="0dip"
+			    android:layout_height="fill_parent"
+			    android:textColor="#333"
+			    android:text="@string/w"
+			    android:layout_weight="1"
+			    android:gravity="center_vertical|center_horizontal"/>
+			<LinearLayout android:layout_width="1px"
+			    android:layout_height="fill_parent"
+			    android:background="#d8e1d6"/>
+			<TextView android:layout_width="0dip"
+			    android:layout_height="fill_parent"
+			    android:textColor="#333"
+			    android:text="@string/d"
+			    android:layout_weight="1"
+			    android:gravity="center_vertical|center_horizontal"/>
+			<LinearLayout android:layout_width="1px"
+			    android:layout_height="fill_parent"
+			    android:background="#d8e1d6"/>
+			<TextView android:layout_width="0dip"
+			    android:layout_height="fill_parent"
+			    android:textColor="#333"
+			    android:text="@string/l"
+			    android:layout_weight="1"
+			    android:gravity="center_vertical|center_horizontal"/>
+			<LinearLayout android:layout_width="1px"
+			    android:layout_height="fill_parent"
+			    android:background="#d8e1d6"/>
+			<TextView android:layout_width="0dip"
+			    android:layout_height="fill_parent"
+			    android:textColor="#333"
+			    android:text="@string/gf"
+			    android:layout_weight="1"
+			    android:gravity="center_vertical|center_horizontal"/>
+			<LinearLayout android:layout_width="1px"
+			    android:layout_height="fill_parent"
+			    android:background="#d8e1d6"/>
+			<TextView android:layout_width="0dip"
+			    android:layout_height="fill_parent"
+			    android:textColor="#333"
+			    android:text="@string/ga"
+			    android:layout_weight="1"
+			    android:gravity="center_vertical|center_horizontal"/>
+			<LinearLayout android:layout_width="1px"
+			    android:layout_height="fill_parent"
+			    android:background="#d8e1d6"/>
+			<LinearLayout android:layout_width="1px"
+			    android:layout_height="fill_parent"
+			    android:background="#d8e1d6"/>
+			<TextView android:layout_width="0dip"
+			    android:layout_height="fill_parent"
+			    android:textColor="#333"
+			    android:text="@string/pts"
+			    android:layout_weight="1"
+			    android:gravity="center_vertical|center_horizontal"/>
+    	</LinearLayout>
+    	<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+        	android:scrollbars="none">
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+		    android:orientation="vertical">
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/bgtab">
+			<TextView android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:textColor="#fffc00"
+			    android:text="@string/groupa"
+			    android:textSize="20dip"
+			    android:gravity="center_vertical|center_horizontal"/>
+    	</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" android:orientation="vertical"
+			    android:background="#fff" android:id="@+id/lla"/>
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/bgtab">
+			<TextView android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:textColor="#fffc00"
+			    android:text="@string/groupb"
+			    android:textSize="20dip"
+			    android:gravity="center_vertical|center_horizontal"/>
+    	</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" android:orientation="vertical"
+			    android:background="#fff" android:id="@+id/llb"/>
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/bgtab">
+			<TextView android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:textColor="#fffc00"
+			    android:text="@string/groupc"
+			    android:textSize="20dip"
+			    android:gravity="center_vertical|center_horizontal"/>
+    	</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" android:orientation="vertical"
+			    android:background="#fff" android:id="@+id/llc"/>
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@drawable/bgtab">
+			<TextView android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:textColor="#fffc00"
+			    android:text="@string/groupd"
+			    android:textSize="20dip"
+			    android:gravity="center_vertical|center_horizontal"/>
+    	</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="wrap_content" android:orientation="vertical"
+			    android:background="#fff" android:id="@+id/lld"/>
+		</LinearLayout>
+		</ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="-44dip"
+        android:background="@drawable/bgbottom"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout android:id="@+id/llbtnsched"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnschedule" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/schedule"
+                android:textSize="8dip"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/llbtnnews"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnnews" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/news"
+                android:textSize="8dip"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/llbtnteams"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnTeams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/teamsactive" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teams"
+                android:textSize="8dip"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/llbtnsetting"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnsetting" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                android:textSize="8dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
